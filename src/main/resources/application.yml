@@ -1,0 +1,14 @@
+server:
+    port: 10010
+
+eureka:
+    instance:
+        prefer-ip-address: true
+    client:
+        serviceUrl:
+            defaultZone: http://admin:123456@localhost:9090/eureka
+        register-with-eureka: true
+
+spring:
+    application:
+        name: home-service
